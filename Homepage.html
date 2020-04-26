@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
   
@@ -55,29 +56,39 @@
             </button>
           </div>
         </div>
+        
+        <ul class="navbar-nav ml-auto">
+            <a class="nav-link" href="#"><i style='font-size:16px' class='fas'>&#xf2c2;</i> 회원가입</a>
+          </li>
+            <a class="nav-link" href="#">
+                <i style='font-size:16px' class='fas'>&#xf0a4;</i>로그인</a>
+          </li>                      
+        </ul>
     </nav>
     <br><br><br>
     <div class="row">
       <div class="col-3">
         
           <!-- 좌측메뉴영역 -->
-          <ul class="list-group">
-              <br>
+          <nav class="navbar">
+             <ul class="navbar-nav">
+              
               <button type="button" class="btn btn-success"
-              style="text-align: center; width: 255px; height: 75px; font-size: 25px;" >현재메뉴</button>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                회원게시판
-                <span class="badge badge-warning badge-pill">12</span>
+              style="text-align: center; width: 255px; height: 75px; font-size: 16px;" >현재메뉴</button>
+              <br>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">회원게시판</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">자료실</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Q & A</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">이건</a>
+                  <a class="dropdown-item" href="#">언제</a>
+                  <a class="dropdown-item" href="#">끝날까</a></div>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                자료실
-                <span class="badge badge-warning badge-pill">50</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center active">
-                Q & A
-                <span class="badge badge-warning badge-pill">99</span>
-              </li>
-              <li style="text-align:end;">닉네임™</li>
             </ul>    
             
             
@@ -87,66 +98,108 @@
           <!-- table>tr*3>td*4 -->
           <table class="table table-bordered table-striped table-hover">
               <thead>
+              <h4 style="font-family: 굴림체;">게시판 - 이런저런 기능이 아무것도 없는 게시판 입니다 - </h4>
+              <h5></h5>
+              <ul class="nav justify-content-end">
+              <div class="input-group" style="width:285px;">
+                <input type="text" class="form-control" placeholder="Search"
+                style="margin-right: 0em;">
+                <div class="input-group-append">
+                  <button class="btn btn-dark" type="submit">
+                    <i style="font-size:20px" class="fa">&#xf002;</i>
               <tr class="text-center">
                   <th>No</td>
                   <th>제목</td>
                   <th>작성자</td>
-                  <th>조회수</td>
+                  <th>작성일</th>
+                  <th>조회수</th>
+                  <th>첨부</td>
               </tr>
+              </ul>
           </thead>
+        
           <tbody>
                     <tr class="text-center">
                         <td>5</td>
-                        <td>부트스트랩 수업중이얌  <span class="badge badge-danger">NEW</span></td>
+                        <td><span class="badge badge-danger">NEW </span> 부트스트랩 수업중이얌</td>
                         <td>길똥이</td>
+                        <td>2020-04-26</td>
                         <td>12</td>
+                        <td><i style='font-size:24px' class='fas'>&#xf14d;</i></td>
+                        
                     </tr>
                       </tr>
                       <tr class="text-center">
                         <td>4</td>
-                        <td>황재용씹새끼</td>
+                        <td>흑흑흑</td>
                         <td>저주한다</td>
+                        <td>2020-04-25</td>
                         <td>666</td>
+                        <td><i style='font-size:24px' class='fas'>&#xf14d;</i></td>
                     </tr>
                     <tr class="text-center">
                       <td>3</td>
-                      <td><span class="badge badge-danger">저주</span>ㅎㅎ</td>
+                      <td><span class="badge badge-danger">저주 </span> ㅎㅎ</td>
                       <td>이태랑</td>
+                      <td>2020-04-22</td>
                       <td>1</td>
+                      <td><i style='font-size:24px' class='fas'>&#xf14d;</i></td>
                   </tr>
                   <tr class="text-center">
                     <td>2</td>
-                    <td><span class="badge badge-secondary">질문</span> 뱃지능 어떻해 스나여🤔</td>
+                    <td><span class="badge badge-secondary">질문 </span> 마춤뻐븐 어떻해 고치나여🤔</td>
                     <td>나도몰라요</td>
+                    <td>2020-02-25</td>
                     <td>19</td>
+                    <td><i style='font-size:24px' class='fas'>&#xf14d;</i></td>
                 </tr>
                 <tr class="text-center">
                   <td>1</td>
-                  <td><span class="badge badge-secondary">질문</span> 뱃지능 어떻해 스나여🤔</td>
-                  <td>나도몰라요</td>
-                  <td>19</td>
+                  <td><span class="badge badge-primary">※긴급</span> 배가 너무 고파요!</td>
+                  <td>소고기먹고싶다</td>
+                  <td>2020-04-03</td>
+                  <td>10</td>
+                  <td><i style='font-size:24px' class='fas'>&#xf14d;</i></td>
               </tr>
               </tbody>
           </table>
-         
-          <span class="badge badge-white">RESET</span>
+          <div class="row">
+          <span class="ml-auto">
+          <button type="button" class="btn btn-white btn-white">RESET</button>
+          <button type="button" class="btn btn-light btn-light">글쓰기</button>
+          <button type="button" class="btn btn-primary btn-sm">수정하기</button>
+          <button type="button" class="btn btn-info btn-sm">삭제하기</button>
+          <button type="button" class="btn btn-success btn-sm">답글쓰기</button>
+          <button type="button" class="btn btn-warning btn-sm">리스트보기</button>
+          <button type="button" class="btn btn-danger btn-sm">전송하기</button>
+          <br><br>
+          </span>
+          </div>
+          <!-- <span class="badge badge-white">RESET</span>
           <span class="badge badge-pill badge-light">글쓰기</span>
           <span class="badge badge-primary">수정하기</span>
           <span class="badge badge-pill badge-info">삭제하기</span>
           <span class="badge badge-info">답글쓰기</span>
           <span class="badge badge-pill badge-warning">리스트보기</span>
-          <span class="badge badge-danger">전송하기</span>
+          <span class="badge badge-danger">전송하기</span> -->
 
           <ul class="pagination justify-content-center">
               <li class="page-item"><a class="page-link" href="javascript:void(0);">
-              <i style="font-size:19px" class="fa">&#xf191;</i> 
+              <i style="font-size:18px" class="fa">&#xf100;</i> 
               </a></li>
-              <li class="page-item"><a class="page-link" href="javascript:void(0);"> << </a></li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0);">
+                <i style="font-size:18px" class="fa">&#xf104;</i> 
+                </a></li>
               <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">1</a></li>
               <li class="page-item active"><a class="page-link" href="javascript:void(0);">2</a></li>
-              <li class="page-item"><a class="page-link" href="javascript:void(0);"> >> </a></li>
+              <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">3</a></li>
+              <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">4</a></li>
+              <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">5</a></li>
+          
               <li class="page-item"><a class="page-link" href="javascript:void(0);">
-              <i style="font-size:19px" class="fa">&#xf152;</i>
+              <i style="font-size:18px" class="fa">&#xf105;</i>
+              <li class="page-item"><a class="page-link" href="javascript:void(0);">
+              <i style="font-size:18px" class="fa">&#xf101;</i> 
               </a></li>
           </ul>
 
@@ -159,5 +212,6 @@
       </div>
   </div>
 </div>
+<h3 style="text-align: left;">닉네임™</h3>
 </body>
 </html>
